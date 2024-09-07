@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+section {
+    @apply m-4 w-full;
+}
+
+button {
+    @apply bg-blue-500 dark:bg-blue-700 mx-2 px-4 rounded text-amber-50;
+}
