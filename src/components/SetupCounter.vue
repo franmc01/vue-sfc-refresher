@@ -6,7 +6,8 @@ export default defineComponent({
   props: {
     initialValue: {
       type: Number,
-      required: true
+      required: false,
+      default: 0
     }
   },
   setup(props){
@@ -31,11 +32,11 @@ export default defineComponent({
 
 <template>
   <section>
-    <h2>Setup Counter: {{counter}}</h2>
-    <h3>Square counter: {{squareCounter}}</h3>
+    <h2 data-test="initial-value">Setup Counter: {{counter}}</h2>
+    <h3 data-test="square-value">Square counter: {{squareCounter}}</h3>
     <div>
-      <button @click="increment">+1</button>
-      <button @click="decrement">-1</button>
+      <button id="increment" @click="increment">+1</button>
+      <button id="decrement" @click="decrement">-1</button>
     </div>
   </section>
 </template>

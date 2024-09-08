@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SetupCounter > Render component with default value 0 1`] = `
+"<section>
+  <h2 data-test="initial-value">Setup Counter: 0</h2>
+  <h3 data-test="square-value">Square counter: 0</h3>
+  <div><button id="increment">+1</button><button id="decrement">-1</button></div>
+</section>"
+`;
