@@ -2,7 +2,7 @@
 interface Props {
   message: string
   itsMine: boolean
-  image: string
+  image?: string
 }
 
 defineProps<Props>()

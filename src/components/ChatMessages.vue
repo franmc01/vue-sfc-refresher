@@ -11,7 +11,7 @@ const props = defineProps<MessageProps>()
 
 const chatRef = ref<HTMLDivElement>()
 
-watch(props.messages, () => {
+watch(props, () => {
   nextTick(() => {
     chatRef.value?.scrollTo({
       top: chatRef.value.scrollHeight,
